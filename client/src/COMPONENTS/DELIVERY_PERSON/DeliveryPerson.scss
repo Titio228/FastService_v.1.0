@@ -1,0 +1,474 @@
+@import "../../assets/STYLE/_fonts.scss";
+@import "../../assets/STYLE/_variables.scss";
+@import "../../assets/STYLE/_vues.scss";
+
+.delivery-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  strong {
+    color: orange;
+  }
+
+  .top-deliver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets//IMG/bck-deliver-page.png") center
+      center/cover;
+    backdrop-filter: blur(5px);
+
+    .title-deliver {
+      margin: 2rem 0;
+    }
+
+    .para-top-deliver {
+      text-align: justify;
+      margin: 3rem;
+      margin-top: 0;
+      font-weight: bolder;
+    }
+
+    .btn-deliver-container {
+      .btn-deliver,
+      .btn-send-deliver {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .center-deliver-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title-center-top {
+      margin: 1rem;
+    }
+
+    .para1,
+    .para2,
+    .para3 {
+      margin: 2rem 2rem 0.5rem 2rem;
+    }
+
+    .btn-center-top {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .mycost,
+    .mymove,
+    .myactor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      box-shadow: 3px 3px 3px black;
+
+      .mymove-container,
+      .mycost-container,
+      .myactor-container {
+        display: flex;
+        margin-bottom: 1rem;
+
+        .fa-check {
+          margin-right: 1rem;
+          font-size: 1.2rem;
+          padding: 0.6rem;
+          color: red;
+          background-color: #ffcdd2;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .para-mycost,
+      .para-mymove,
+      .para-myactor {
+        padding-left: 3rem;
+      }
+    }
+  }
+
+  .center-deliver-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dfe6e9;
+
+    .title-center-bottom {
+      margin: 1rem;
+      text-align: center;
+    }
+
+    .myinscription,
+    .myanswer,
+    .mytaking {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      margin-bottom: 2rem;
+      padding: 1rem;
+
+      .myinscription-container,
+      .myanswer-container,
+      .mytaking-container {
+        display: flex;
+        margin-bottom: 1rem;
+
+        .fa-check,
+        .fa-comments,
+        .fa-thumbs-up {
+          margin-right: 1rem;
+          font-size: 1.2rem;
+          padding: 0.6rem;
+          color: red;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .btn-start-deliver {
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  .bottom-deliver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .why-deliver,
+    .cost-deliver,
+    .where-deliver,
+    .wait-deliver {
+      color: red;
+      margin: 2rem;
+      text-align: center;
+    }
+
+    .para-why-deliver,
+    .para-cost-deliver,
+    .para-where-deliver,
+    .para-wait-deliver {
+      margin: 0 2rem;
+      text-align: justify;
+    }
+  }
+
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include lg {
+    .top-deliver {
+      width: $width;
+
+      .title-deliver {
+        font-size: 3rem;
+      }
+
+      .btn-deliver-container {
+        margin: auto;
+        display: flex;
+
+        .btn-deliver,
+        .btn-send-deliver {
+          margin: 2rem 1rem;
+        }
+      }
+    }
+
+    .center-deliver-top {
+      text-align: center;
+
+      .title-center-top {
+        margin: 2rem;
+        font-size: 2rem;
+        position: relative;
+      }
+
+      .title-center-top:after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: red;
+        bottom: -5px;
+        display: block;
+      }
+
+      .para1,
+      .para2,
+      .para3 {
+        margin: 2rem 2rem 0.5rem 2rem;
+      }
+
+      .btn-center-top {
+        margin: 3rem 0 2rem 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: $width;
+        text-align: start;
+
+        .mycost,
+        .mymove,
+        .myactor {
+          margin: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .center-deliver-bottom {
+      width: $width;
+      padding: 0 1rem;
+
+      .title-center-bottom {
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+      }
+
+      .title-center-bottom:after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: red;
+        bottom: -5px;
+        display: block;
+      }
+
+      .myinscription,
+      .myanswer,
+      .mytaking {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: $width;
+
+        .myinscription-container,
+        .myanswer-container,
+        .mytaking-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fa-check,
+          .fa-comments,
+          .fa-thumbs-up {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .btn-start-deliver {
+        margin: 2rem auto;
+      }
+    }
+
+    .bottom-deliver {
+      display: grid;
+      grid-template-areas:
+        "why where"
+        "cost wait";
+      justify-content: center;
+      align-items: center;
+
+      .container-why {
+        grid-area: why;
+      }
+
+      .container-cost {
+        grid-area: cost;
+      }
+
+      .container-where {
+        grid-area: where;
+      }
+
+      .container-wait {
+        grid-area: wait;
+      }
+    }
+  }
+
+  @include xxl {
+    max-width: 2048px;
+    margin: auto;
+
+    .top-deliver {
+      width: $width;
+
+      .title-deliver {
+        font-size: 3rem;
+      }
+
+      .btn-deliver-container {
+        margin: auto;
+        display: flex;
+
+        .btn-deliver,
+        .btn-send-deliver {
+          margin: 2rem 1rem;
+        }
+      }
+    }
+
+    .center-deliver-top {
+      text-align: center;
+
+      .title-center-top {
+        margin: 2rem;
+        font-size: 2rem;
+        position: relative;
+      }
+
+      .title-center-top:after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: red;
+        bottom: -5px;
+        display: block;
+      }
+
+      .para1,
+      .para2,
+      .para3 {
+        margin: 2rem 2rem 0.5rem 2rem;
+      }
+
+      .btn-center-top {
+        margin: 3rem 0 2rem 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: $width;
+        text-align: start;
+
+        .mycost,
+        .mymove,
+        .myactor {
+          margin: 2rem;
+          padding: 1rem;
+        }
+      }
+    }
+
+    .center-deliver-bottom {
+      width: $width;
+      padding: 0 1rem;
+
+      .title-center-bottom {
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+      }
+
+      .title-center-bottom:after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: red;
+        bottom: -5px;
+        display: block;
+      }
+
+      .myinscription,
+      .myanswer,
+      .mytaking {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: $width;
+
+        .myinscription-container,
+        .myanswer-container,
+        .mytaking-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fa-check,
+          .fa-comments,
+          .fa-thumbs-up {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .btn-start-deliver {
+        margin: 2rem auto;
+      }
+    }
+
+    .bottom-deliver {
+      display: grid;
+      grid-template-areas:
+        "why where"
+        "cost wait";
+      justify-content: center;
+      align-items: center;
+
+      .container-why {
+        grid-area: why;
+      }
+
+      .container-cost {
+        grid-area: cost;
+      }
+
+      .container-where {
+        grid-area: where;
+      }
+
+      .container-wait {
+        grid-area: wait;
+      }
+    }
+  }
+}

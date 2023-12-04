@@ -1,0 +1,150 @@
+.navbar {
+  font-size: 1.5rem;
+  background-color: #1f2937;
+}
+.navbar .admin-general {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.navbar .link-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .link-logo .logo {
+  width: 150px;
+  border-bottom: 1px solid orange;
+}
+.navbar .link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+  text-decoration: none;
+  color: #e5e7eb;
+}
+.navbar .link .avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+.navbar .link:hover {
+  color: orange;
+  border-bottom: 3px solid orange;
+}
+.navbar .active {
+  color: orangered;
+}
+.navbar .link-submenu-admin-hidden {
+  display: none;
+}
+.navbar .link-submenu-admin-display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.navbar .link-submenu-admin-display .link-submenu {
+  margin-left: 45%;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  line-height: 3rem;
+  border-left: 1px solid #3b82f6;
+  border-bottom: 1px dashed #3b82f6;
+  padding-left: 0.5rem;
+  background-color: #1f2937;
+  border-radius: 0 1rem 1rem 0;
+  width: 150px;
+}
+.navbar .link-submenu-admin-display .active {
+  color: orangered;
+}
+.navbar .link-submenu-admin-display .link-submenu:hover {
+  color: orange;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .link-logo .logo {
+    margin: 1rem 0;
+  }
+  .navbar .admin-general {
+    width: 100%;
+  }
+  .navbar .admin-general .fa-bars {
+    display: none;
+  }
+  .navbar .link {
+    width: 80%;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .admin-general {
+    display: flex;
+    position: relative;
+  }
+  .navbar .admin-general .fa-bars {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .navbar .admin-general .link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: right;
+  }
+  .navbar .admin-general .link-submenu-admin-display {
+    position: absolute;
+    top: 8.7rem;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .navbar {
+    max-width: 2048px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .admin-general {
+    display: flex;
+    position: relative;
+  }
+  .navbar .admin-general .fa-bars {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .navbar .admin-general .link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: right;
+  }
+  .navbar .admin-general .link-submenu-admin-display {
+    position: absolute;
+    top: 8.7rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

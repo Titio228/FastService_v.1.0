@@ -1,0 +1,54 @@
+@import "../../assets/STYLE/_fonts.scss";
+@import "../../assets/STYLE/_variables.scss";
+@import "../../assets/STYLE/_vues.scss";
+
+.blue {
+  width: $width;
+  background-color: $bck-color-button;
+  color: $bck-color-primary;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.red {
+  width: $width;
+  background-color: red;
+  color: $bck-color-primary;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.cyan {
+  width: $width;
+  background-color: cyan;
+  color: $bck-color-header-footer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.blue:hover,
+.red:hover,
+.cyan:hover {
+  background-color: orange;
+}
+
+.container-btn-xs {
+  width: 200px;
+  line-height: $line-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-btn-lg {
+  width: 500px;
+  line-height: $line-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

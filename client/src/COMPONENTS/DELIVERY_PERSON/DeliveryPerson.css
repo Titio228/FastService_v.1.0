@@ -1,0 +1,508 @@
+.delivery-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-person strong {
+  color: orange;
+}
+.delivery-person .top-deliver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets//IMG/bck-deliver-page.png") center center/cover;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.delivery-person .top-deliver .title-deliver {
+  margin: 2rem 0;
+}
+.delivery-person .top-deliver .para-top-deliver {
+  text-align: justify;
+  margin: 3rem;
+  margin-top: 0;
+  font-weight: bolder;
+}
+.delivery-person .top-deliver .btn-deliver-container .btn-deliver,
+.delivery-person .top-deliver .btn-deliver-container .btn-send-deliver {
+  margin: 1rem 0;
+}
+.delivery-person .center-deliver-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-person .center-deliver-top .title-center-top {
+  margin: 1rem;
+}
+.delivery-person .center-deliver-top .para1,
+.delivery-person .center-deliver-top .para2,
+.delivery-person .center-deliver-top .para3 {
+  margin: 2rem 2rem 0.5rem 2rem;
+}
+.delivery-person .center-deliver-top .btn-center-top {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.delivery-person .center-deliver-top .mycost,
+.delivery-person .center-deliver-top .mymove,
+.delivery-person .center-deliver-top .myactor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 3px 3px 3px black;
+}
+.delivery-person .center-deliver-top .mycost .mymove-container,
+.delivery-person .center-deliver-top .mycost .mycost-container,
+.delivery-person .center-deliver-top .mycost .myactor-container,
+.delivery-person .center-deliver-top .mymove .mymove-container,
+.delivery-person .center-deliver-top .mymove .mycost-container,
+.delivery-person .center-deliver-top .mymove .myactor-container,
+.delivery-person .center-deliver-top .myactor .mymove-container,
+.delivery-person .center-deliver-top .myactor .mycost-container,
+.delivery-person .center-deliver-top .myactor .myactor-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.delivery-person .center-deliver-top .mycost .mymove-container .fa-check,
+.delivery-person .center-deliver-top .mycost .mycost-container .fa-check,
+.delivery-person .center-deliver-top .mycost .myactor-container .fa-check,
+.delivery-person .center-deliver-top .mymove .mymove-container .fa-check,
+.delivery-person .center-deliver-top .mymove .mycost-container .fa-check,
+.delivery-person .center-deliver-top .mymove .myactor-container .fa-check,
+.delivery-person .center-deliver-top .myactor .mymove-container .fa-check,
+.delivery-person .center-deliver-top .myactor .mycost-container .fa-check,
+.delivery-person .center-deliver-top .myactor .myactor-container .fa-check {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  color: red;
+  background-color: #ffcdd2;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-person .center-deliver-top .mycost .para-mycost,
+.delivery-person .center-deliver-top .mycost .para-mymove,
+.delivery-person .center-deliver-top .mycost .para-myactor,
+.delivery-person .center-deliver-top .mymove .para-mycost,
+.delivery-person .center-deliver-top .mymove .para-mymove,
+.delivery-person .center-deliver-top .mymove .para-myactor,
+.delivery-person .center-deliver-top .myactor .para-mycost,
+.delivery-person .center-deliver-top .myactor .para-mymove,
+.delivery-person .center-deliver-top .myactor .para-myactor {
+  padding-left: 3rem;
+}
+.delivery-person .center-deliver-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dfe6e9;
+}
+.delivery-person .center-deliver-bottom .title-center-bottom {
+  margin: 1rem;
+  text-align: center;
+}
+.delivery-person .center-deliver-bottom .myinscription,
+.delivery-person .center-deliver-bottom .myanswer,
+.delivery-person .center-deliver-bottom .mytaking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.delivery-person .center-deliver-bottom .myinscription .myinscription-container,
+.delivery-person .center-deliver-bottom .myinscription .myanswer-container,
+.delivery-person .center-deliver-bottom .myinscription .mytaking-container,
+.delivery-person .center-deliver-bottom .myanswer .myinscription-container,
+.delivery-person .center-deliver-bottom .myanswer .myanswer-container,
+.delivery-person .center-deliver-bottom .myanswer .mytaking-container,
+.delivery-person .center-deliver-bottom .mytaking .myinscription-container,
+.delivery-person .center-deliver-bottom .mytaking .myanswer-container,
+.delivery-person .center-deliver-bottom .mytaking .mytaking-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-check,
+.delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-comments,
+.delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-check,
+.delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-comments,
+.delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-check,
+.delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-comments,
+.delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-check,
+.delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-comments,
+.delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-check,
+.delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-comments,
+.delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-check,
+.delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-comments,
+.delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-check,
+.delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-comments,
+.delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-check,
+.delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-comments,
+.delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-thumbs-up,
+.delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-check,
+.delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-comments,
+.delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-thumbs-up {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  color: red;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-person .center-deliver-bottom .btn-start-deliver {
+  margin: 0 0 2rem 0;
+}
+.delivery-person .bottom-deliver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.delivery-person .bottom-deliver .why-deliver,
+.delivery-person .bottom-deliver .cost-deliver,
+.delivery-person .bottom-deliver .where-deliver,
+.delivery-person .bottom-deliver .wait-deliver {
+  color: red;
+  margin: 2rem;
+  text-align: center;
+}
+.delivery-person .bottom-deliver .para-why-deliver,
+.delivery-person .bottom-deliver .para-cost-deliver,
+.delivery-person .bottom-deliver .para-where-deliver,
+.delivery-person .bottom-deliver .para-wait-deliver {
+  margin: 0 2rem;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .delivery-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .delivery-person .top-deliver {
+    width: 100%;
+  }
+  .delivery-person .top-deliver .title-deliver {
+    font-size: 3rem;
+  }
+  .delivery-person .top-deliver .btn-deliver-container {
+    margin: auto;
+    display: flex;
+  }
+  .delivery-person .top-deliver .btn-deliver-container .btn-deliver,
+  .delivery-person .top-deliver .btn-deliver-container .btn-send-deliver {
+    margin: 2rem 1rem;
+  }
+  .delivery-person .center-deliver-top {
+    text-align: center;
+  }
+  .delivery-person .center-deliver-top .title-center-top {
+    margin: 2rem;
+    font-size: 2rem;
+    position: relative;
+  }
+  .delivery-person .center-deliver-top .title-center-top:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+    display: block;
+  }
+  .delivery-person .center-deliver-top .para1,
+  .delivery-person .center-deliver-top .para2,
+  .delivery-person .center-deliver-top .para3 {
+    margin: 2rem 2rem 0.5rem 2rem;
+  }
+  .delivery-person .center-deliver-top .btn-center-top {
+    margin: 3rem 0 2rem 0;
+  }
+  .delivery-person .center-deliver-top .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: start;
+  }
+  .delivery-person .center-deliver-top .container .mycost,
+  .delivery-person .center-deliver-top .container .mymove,
+  .delivery-person .center-deliver-top .container .myactor {
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .delivery-person .center-deliver-bottom {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .delivery-person .center-deliver-bottom .title-center-bottom {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+  }
+  .delivery-person .center-deliver-bottom .title-center-bottom:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+    display: block;
+  }
+  .delivery-person .center-deliver-bottom .myinscription,
+  .delivery-person .center-deliver-bottom .myanswer,
+  .delivery-person .center-deliver-bottom .mytaking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-check,
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-check,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-check,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-check,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-check,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-check,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-check,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-comments,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-check,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-comments,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-check,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-comments,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-thumbs-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-person .center-deliver-bottom .btn-start-deliver {
+    margin: 2rem auto;
+  }
+  .delivery-person .bottom-deliver {
+    display: grid;
+    grid-template-areas: "why where" "cost wait";
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-person .bottom-deliver .container-why {
+    grid-area: why;
+  }
+  .delivery-person .bottom-deliver .container-cost {
+    grid-area: cost;
+  }
+  .delivery-person .bottom-deliver .container-where {
+    grid-area: where;
+  }
+  .delivery-person .bottom-deliver .container-wait {
+    grid-area: wait;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .delivery-person {
+    max-width: 2048px;
+    margin: auto;
+  }
+  .delivery-person .top-deliver {
+    width: 100%;
+  }
+  .delivery-person .top-deliver .title-deliver {
+    font-size: 3rem;
+  }
+  .delivery-person .top-deliver .btn-deliver-container {
+    margin: auto;
+    display: flex;
+  }
+  .delivery-person .top-deliver .btn-deliver-container .btn-deliver,
+  .delivery-person .top-deliver .btn-deliver-container .btn-send-deliver {
+    margin: 2rem 1rem;
+  }
+  .delivery-person .center-deliver-top {
+    text-align: center;
+  }
+  .delivery-person .center-deliver-top .title-center-top {
+    margin: 2rem;
+    font-size: 2rem;
+    position: relative;
+  }
+  .delivery-person .center-deliver-top .title-center-top:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+    display: block;
+  }
+  .delivery-person .center-deliver-top .para1,
+  .delivery-person .center-deliver-top .para2,
+  .delivery-person .center-deliver-top .para3 {
+    margin: 2rem 2rem 0.5rem 2rem;
+  }
+  .delivery-person .center-deliver-top .btn-center-top {
+    margin: 3rem 0 2rem 0;
+  }
+  .delivery-person .center-deliver-top .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: start;
+  }
+  .delivery-person .center-deliver-top .container .mycost,
+  .delivery-person .center-deliver-top .container .mymove,
+  .delivery-person .center-deliver-top .container .myactor {
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .delivery-person .center-deliver-bottom {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .delivery-person .center-deliver-bottom .title-center-bottom {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+  }
+  .delivery-person .center-deliver-bottom .title-center-bottom:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+    display: block;
+  }
+  .delivery-person .center-deliver-bottom .myinscription,
+  .delivery-person .center-deliver-bottom .myanswer,
+  .delivery-person .center-deliver-bottom .mytaking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-check,
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myinscription .myinscription-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-check,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myinscription .myanswer-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-check,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myinscription .mytaking-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-check,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myanswer .myinscription-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-check,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myanswer .myanswer-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-check,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-comments,
+  .delivery-person .center-deliver-bottom .myanswer .mytaking-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-check,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-comments,
+  .delivery-person .center-deliver-bottom .mytaking .myinscription-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-check,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-comments,
+  .delivery-person .center-deliver-bottom .mytaking .myanswer-container .fa-thumbs-up,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-check,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-comments,
+  .delivery-person .center-deliver-bottom .mytaking .mytaking-container .fa-thumbs-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-person .center-deliver-bottom .btn-start-deliver {
+    margin: 2rem auto;
+  }
+  .delivery-person .bottom-deliver {
+    display: grid;
+    grid-template-areas: "why where" "cost wait";
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-person .bottom-deliver .container-why {
+    grid-area: why;
+  }
+  .delivery-person .bottom-deliver .container-cost {
+    grid-area: cost;
+  }
+  .delivery-person .bottom-deliver .container-where {
+    grid-area: where;
+  }
+  .delivery-person .bottom-deliver .container-wait {
+    grid-area: wait;
+  }
+}/*# sourceMappingURL=DeliveryPerson.css.map */

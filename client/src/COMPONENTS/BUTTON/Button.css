@@ -1,0 +1,50 @@
+.blue {
+  width: 100%;
+  background-color: #3b82f6;
+  color: #e5e7eb;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.red {
+  width: 100%;
+  background-color: red;
+  color: #e5e7eb;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.cyan {
+  width: 100%;
+  background-color: cyan;
+  color: #1f2937;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.blue:hover,
+.red:hover,
+.cyan:hover {
+  background-color: orange;
+}
+
+.container-btn-xs {
+  width: 200px;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-btn-lg {
+  width: 500px;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Button.css.map */

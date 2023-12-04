@@ -1,0 +1,15 @@
+@import "../../assets/STYLE/_fonts.scss";
+@import "../../assets/STYLE/_variables.scss";
+@import "../../assets/STYLE/_vues.scss";
+
+.app {
+  // Dimension
+  width: $width;
+  min-height: $min-height;
+  //   Position
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  //   Style
+  font-family: $font-family;
+}

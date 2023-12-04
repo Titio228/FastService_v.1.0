@@ -1,0 +1,177 @@
+@import "../../assets/STYLE/_fonts.scss";
+@import "../../assets/STYLE/_variables.scss";
+@import "../../assets/STYLE/_vues.scss";
+
+.navbar {
+  font-size: 1.5rem;
+  background-color: $bck-color-header-footer;
+
+  .admin-general {
+    display: flex;
+    height: $height;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+
+  .link-logo {
+    width: 100%;
+    height: $height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 150px;
+      border-bottom: 1px solid orange;
+    }
+  }
+
+  .link {
+    width: 100%;
+    height: $height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: $line-height;
+    text-decoration: none;
+    color: $bck-color-primary;
+
+    .avatar {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .link:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+  }
+
+  .active {
+    color: orangered;
+  }
+
+  .link-submenu-admin-hidden {
+    display: none;
+  }
+
+  .link-submenu-admin-display {
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .link-submenu {
+      margin-left: 45%;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: $bck-color-primary;
+      line-height: $line-height;
+      border-left: 1px solid $underline-color-button;
+      border-bottom: 1px dashed $underline-color-button-dashed;
+      padding-left: 0.5rem;
+      background-color: $bck-color-header-footer;
+      border-radius: 0 1rem 1rem 0;
+      width: 150px;
+    }
+
+    .active {
+      color: orangered;
+    }
+
+    .link-submenu:hover {
+      color: orange;
+    }
+  }
+
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .link-logo {
+      .logo {
+        margin: 1rem 0;
+      }
+    }
+
+    .admin-general {
+      width: $width;
+
+      .fa-bars {
+        display: none;
+      }
+    }
+
+    .link {
+      width: 80%;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    .admin-general {
+      display: flex;
+      position: relative;
+
+      .fa-bars {
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      .link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: right;
+      }
+
+      .link-submenu-admin-display {
+        position: absolute;
+        top: 8.7rem;
+      }
+    }
+  }
+
+  @include xxl {
+    max-width: 2048px;
+    width: $width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    .admin-general {
+      display: flex;
+      position: relative;
+
+      .fa-bars {
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      .link {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: right;
+      }
+
+      .link-submenu-admin-display {
+        position: absolute;
+        top: 8.7rem;
+      }
+    }
+  }
+}

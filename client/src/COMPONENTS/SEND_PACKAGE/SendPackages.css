@@ -1,0 +1,554 @@
+.send-package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package strong {
+  color: orange;
+}
+.send-package .tail-para {
+  text-align: center;
+  margin: 0 1rem;
+}
+.send-package .top-send {
+  background: url("../../assets/IMG/bck-send-xs.jpg") center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package .top-send .title-send {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 1rem 0;
+}
+.send-package .top-send .para1 {
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+.send-package .top-send .para2 {
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+.send-package .top-send .para3 {
+  font-weight: bold;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+.send-package .top-send .para4 {
+  color: white;
+  margin: 1rem;
+  text-align: center;
+}
+.send-package .top-send .simulator {
+  background-color: white;
+  margin: 2rem 0;
+  border: 1px whihe solid;
+  box-shadow: 0px 0px 8px black;
+  width: 70%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 7px #55efc4 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package .top-send .simulator .title-send-simulator {
+  color: #55efc4;
+  font-weight: bold;
+  width: auto;
+  text-align: center;
+  margin: 1rem 0;
+}
+.send-package .top-send .simulator .distance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package .top-send .simulator .distance .simulator-title1 {
+  width: 100%;
+  text-align: center;
+}
+.send-package .top-send .simulator .weight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package .top-send .simulator .weight .simulator-title2 {
+  width: 100%;
+  text-align: center;
+}
+.send-package .top-send .simulator .deliver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package .top-send .simulator .deliver .simulator-title3 {
+  width: 100%;
+  text-align: center;
+}
+.send-package .top-send .simulator .deliver .price-simulator {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.send-package .top-send .simulator .para-modal {
+  font-size: 0.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+.send-package .top-send .send-box {
+  margin-bottom: 2rem;
+}
+.send-package .center-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #dfe6e9;
+}
+.send-package .center-send .left-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #1f2937;
+}
+.send-package .center-send .left-send .title-left-send {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 5px solid #55efc4;
+  padding-bottom: 1rem;
+  margin: 1rem;
+}
+.send-package .center-send .left-send .para10 {
+  margin: 1rem;
+  text-align: center;
+}
+.send-package .center-send .left-send .btn-left-send {
+  margin: 2rem;
+}
+.send-package .center-send .right-send {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+.send-package .center-send .right-send .localisation-send,
+.send-package .center-send .right-send .details-send,
+.send-package .center-send .right-send .price-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 150px;
+  transition: all 0.5s ease-in-out;
+}
+.send-package .center-send .right-send .localisation-send .fa-location-dot,
+.send-package .center-send .right-send .localisation-send .fa-photo-film,
+.send-package .center-send .right-send .localisation-send .fa-hand-holding-dollar,
+.send-package .center-send .right-send .details-send .fa-location-dot,
+.send-package .center-send .right-send .details-send .fa-photo-film,
+.send-package .center-send .right-send .details-send .fa-hand-holding-dollar,
+.send-package .center-send .right-send .price-send .fa-location-dot,
+.send-package .center-send .right-send .price-send .fa-photo-film,
+.send-package .center-send .right-send .price-send .fa-hand-holding-dollar {
+  font-size: 2rem;
+  color: #55efc4;
+  margin-right: 2rem;
+}
+.send-package .center-send .right-send .localisation-send:hover,
+.send-package .center-send .right-send .details-send:hover,
+.send-package .center-send .right-send .price-send:hover {
+  transform: scale(1.2);
+}
+.send-package .bottom-send {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.send-package .bottom-send .title-bottom {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .subtitle-bottom {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-xxl {
+  border-top: 5px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px black;
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-xxl .tail-xxl {
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.send-package .bottom-send .box-tail-l {
+  border-top: 5px solid orange;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px black;
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-l .tail-l {
+  color: orange;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.send-package .bottom-send .box-tail-s {
+  border-top: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px black;
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-s .tail-s {
+  color: green;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.send-package .bottom-send .box-tail-xl {
+  border-top: 5px solid red;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px black;
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-xl .tail-xl {
+  color: red;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.send-package .bottom-send .box-tail-m {
+  border-top: 5px solid blue;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px black;
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-m .tail-m {
+  color: blue;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.send-package .bottom-send .box-tail-xs {
+  border-top: 5px solid gray;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px black;
+  height: 200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.send-package .bottom-send .box-tail-xs .tail-xs {
+  color: gray;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .send-package {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .send-package .top-send {
+    width: 95%;
+    margin: 2rem;
+    background: url("../../assets/IMG/bck-send.jpg") center center/cover;
+    border-radius: 1rem 1rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "title box" "title box" "para1 box" "para2 box" "para3 btn" "para4 btn";
+  }
+  .send-package .top-send .title-send {
+    grid-area: title;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .send-package .top-send .para1 {
+    grid-area: para1;
+  }
+  .send-package .top-send .para2 {
+    grid-area: para2;
+  }
+  .send-package .top-send .para3 {
+    grid-area: para3;
+  }
+  .send-package .top-send .para4 {
+    grid-area: para4;
+  }
+  .send-package .top-send .simulator {
+    margin: auto;
+    margin-top: 2rem;
+    grid-area: box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "title-modal" "sub-title-modal1" "sub-title-modal2" "sub-title-modal3" "btn-choice-deliver" "para-modal";
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .send-package .top-send .simulator .title-send-simulator {
+    grid-area: title-modal;
+    font-size: 2rem;
+  }
+  .send-package .top-send .simulator .distance {
+    grid-area: sub-title-modal1;
+  }
+  .send-package .top-send .simulator .weight {
+    grid-area: sub-title-modal2;
+  }
+  .send-package .top-send .simulator .deliver {
+    grid-area: sub-title-modal3;
+  }
+  .send-package .top-send .simulator .modal {
+    grid-area: btn-choice-deliver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-package .top-send .simulator .para-modal {
+    grid-area: para-modal;
+  }
+  .send-package .top-send .send-box {
+    grid-area: btn;
+    margin: auto;
+  }
+  .send-package .center-send {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dfe6e9;
+  }
+  .send-package .bottom-send {
+    height: 700px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title-bottom title-bottom title-bottom" "para-bottom para-bottom para-bottom" "box-xxl box-l box-s" "box-xl box-m box-xs";
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-package .bottom-send .title-bottom {
+    grid-area: title-bottom;
+  }
+  .send-package .bottom-send .subtitle-bottom {
+    grid-area: para-bottom;
+  }
+  .send-package .bottom-send .box-tail-xxl {
+    grid-area: box-xxl;
+  }
+  .send-package .bottom-send .box-tail-l {
+    grid-area: box-l;
+  }
+  .send-package .bottom-send .box-tail-s {
+    grid-area: box-s;
+  }
+  .send-package .bottom-send .box-tail-xl {
+    grid-area: box-xl;
+  }
+  .send-package .bottom-send .box-tail-m {
+    grid-area: box-m;
+  }
+  .send-package .bottom-send .box-tail-xs {
+    grid-area: box-xs;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .send-package {
+    max-width: 2048px;
+    margin: auto;
+  }
+  .send-package .top-send {
+    width: 95%;
+    margin: 2rem;
+    background: url("../../assets/IMG/bck-send.jpg") center center/cover;
+    border-radius: 1rem 1rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "title box" "title box" "para1 box" "para2 box" "para3 btn" "para4 btn";
+  }
+  .send-package .top-send .title-send {
+    grid-area: title;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .send-package .top-send .para1 {
+    grid-area: para1;
+  }
+  .send-package .top-send .para2 {
+    grid-area: para2;
+  }
+  .send-package .top-send .para3 {
+    grid-area: para3;
+  }
+  .send-package .top-send .para4 {
+    grid-area: para4;
+  }
+  .send-package .top-send .simulator {
+    margin: auto;
+    margin-top: 2rem;
+    grid-area: box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "title-modal" "sub-title-modal1" "sub-title-modal2" "sub-title-modal3" "btn-choice-deliver" "para-modal";
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .send-package .top-send .simulator .title-send-simulator {
+    grid-area: title-modal;
+    font-size: 2rem;
+  }
+  .send-package .top-send .simulator .distance {
+    grid-area: sub-title-modal1;
+  }
+  .send-package .top-send .simulator .weight {
+    grid-area: sub-title-modal2;
+  }
+  .send-package .top-send .simulator .deliver {
+    grid-area: sub-title-modal3;
+  }
+  .send-package .top-send .simulator .modal {
+    grid-area: btn-choice-deliver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-package .top-send .simulator .para-modal {
+    grid-area: para-modal;
+  }
+  .send-package .top-send .send-box {
+    grid-area: btn;
+    margin: auto;
+  }
+  .send-package .center-send {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dfe6e9;
+  }
+  .send-package .bottom-send {
+    width: 100%;
+    height: 700px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title-bottom title-bottom title-bottom" "para-bottom para-bottom para-bottom" "box-xxl box-l box-s" "box-xl box-m box-xs";
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-package .bottom-send .title-bottom {
+    grid-area: title-bottom;
+  }
+  .send-package .bottom-send .subtitle-bottom {
+    grid-area: para-bottom;
+  }
+  .send-package .bottom-send .box-tail-xxl {
+    grid-area: box-xxl;
+  }
+  .send-package .bottom-send .box-tail-l {
+    grid-area: box-l;
+  }
+  .send-package .bottom-send .box-tail-s {
+    grid-area: box-s;
+  }
+  .send-package .bottom-send .box-tail-xl {
+    grid-area: box-xl;
+  }
+  .send-package .bottom-send .box-tail-m {
+    grid-area: box-m;
+  }
+  .send-package .bottom-send .box-tail-xs {
+    grid-area: box-xs;
+  }
+}/*# sourceMappingURL=SendPackages.css.map */
