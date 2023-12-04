@@ -25,10 +25,23 @@
   border-radius: 1rem;
 }
 
+.orange {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
 .blue:hover,
 .red:hover,
 .cyan:hover {
   background-color: orange;
+}
+
+.orange:hover {
+  background-color: orangered;
 }
 
 .container-btn-xs {

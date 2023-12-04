@@ -1,1 +1,193 @@
-/*# sourceMappingURL=Profile.css.map */
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.profile .avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile .avatar .avatar-profile {
+  width: 150px;
+  margin: 2rem;
+}
+.profile .personal-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.profile .personal-data .form-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile .personal-data .form-profile .entity {
+  margin-right: 1rem;
+  width: 150px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.profile .personal-data .form-profile input {
+  width: 250px;
+  line-height: 1.5rem;
+  outline: none;
+  border: 2px #1f2937 solid;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.profile .personal-data .form-profile .phone-input {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  width: 250px;
+}
+.profile .personal-data .btn-password-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1f2937;
+}
+.profile .deliverer-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.profile .deliverer-data .form-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile .deliverer-data .form-profile .entity {
+  margin-right: 1rem;
+  width: 150px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.profile .deliverer-data .form-profile input {
+  width: 250px;
+  line-height: 1.5rem;
+  outline: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.profile .deliverer-data .vehicle {
+  width: 100%;
+}
+.profile .deliverer-data .vehicle .title-add {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+.profile .deliverer-data .vehicle .title-add .fa-plus {
+  margin-left: 1rem;
+  border: 2px black solid;
+  padding: 0.1rem;
+  background-color: #6d747d;
+  color: white;
+}
+.profile .deliverer-data .vehicle .list-vehicle {
+  border: 2px #1f2937 solid;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+.profile .deliverer-data .vehicle .list-vehicle thead th:nth-child(odd) {
+  background-color: #1f2937;
+  color: white;
+  font-size: 1.2rem;
+  width: 100px;
+}
+.profile .deliverer-data .vehicle .list-vehicle thead th:nth-child(even) {
+  background-color: #6d747d;
+  color: white;
+  font-size: 1.2rem;
+  width: 100px;
+}
+.profile .deliverer-data .vehicle .list-vehicle tbody {
+  text-align: center;
+}
+.profile .deliverer-data .vehicle .list-vehicle tbody td:nth-child(odd) {
+  background-color: #34495e;
+  color: white;
+  width: 100px;
+}
+.profile .deliverer-data .vehicle .list-vehicle tbody td:nth-child(even) {
+  background-color: #ecf0f1;
+  color: white;
+  width: 100px;
+  color: #1f2937;
+}
+.profile .deliverer-data .way {
+  width: 100%;
+}
+.profile .deliverer-data .way .title-add {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+.profile .deliverer-data .way .title-add .fa-plus {
+  margin-left: 1rem;
+  border: 2px black solid;
+  padding: 0.1rem;
+  background-color: #6d747d;
+  color: white;
+}
+.profile .deliverer-data .way .list-way {
+  border: 2px #1f2937 solid;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+.profile .deliverer-data .way .list-way thead th:nth-child(odd) {
+  background-color: #1f2937;
+  color: white;
+  font-size: 1.2rem;
+  width: 100px;
+}
+.profile .deliverer-data .way .list-way thead th:nth-child(even) {
+  background-color: #6d747d;
+  color: white;
+  font-size: 1.2rem;
+  width: 100px;
+}
+.profile .deliverer-data .way .list-way tbody {
+  text-align: center;
+}
+.profile .deliverer-data .way .list-way tbody td:nth-child(odd) {
+  background-color: #34495e;
+  color: white;
+  width: 100px;
+}
+.profile .deliverer-data .way .list-way tbody td:nth-child(even) {
+  background-color: #ecf0f1;
+  color: white;
+  width: 100px;
+  color: #1f2937;
+}/*# sourceMappingURL=Profile.css.map */
