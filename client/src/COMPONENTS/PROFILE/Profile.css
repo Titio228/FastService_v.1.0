@@ -1,25 +1,25 @@
-.profile {
+.profile-admin {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.profile h1 {
+.profile-admin h1 {
   margin-bottom: 2rem;
   text-align: center;
 }
-.profile .avatar {
+.profile-admin .avatar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.profile .avatar .avatar-profile {
+.profile-admin .avatar .avatar-profile {
   width: 150px;
   margin: 2rem;
 }
-.profile .personal-data {
+.profile-admin .personal-data {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -27,35 +27,31 @@
   align-items: center;
   padding: 2rem;
 }
-.profile .personal-data .form-profile {
+.profile-admin .personal-data .form-profile {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(10, 1fr);
   justify-content: space-evenly;
   align-items: center;
 }
-.profile .personal-data .form-profile .entity {
+.profile-admin .personal-data .form-profile .entity {
   margin-right: 1rem;
   width: 150px;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.profile .personal-data .form-profile input {
+.profile-admin .personal-data .form-profile .input-profile {
   width: 250px;
   line-height: 1.5rem;
   outline: none;
-  border: 2px #1f2937 solid;
-  border-radius: 1rem;
   text-align: center;
   margin-bottom: 0.5rem;
 }
-.profile .personal-data .form-profile .phone-input {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  width: 250px;
+.profile-admin .personal-data .form-profile .avatar-upload {
+  border: none;
+  border-radius: 0;
 }
-.profile .personal-data .btn-password-profile {
+.profile-admin .personal-data .btn-password-profile {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -64,7 +60,7 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid #1f2937;
 }
-.profile .deliverer-data {
+.profile-admin .deliverer-data {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -72,20 +68,20 @@
   align-items: center;
   padding: 2rem;
 }
-.profile .deliverer-data .form-profile {
+.profile-admin .deliverer-data .form-profile {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-evenly;
   align-items: center;
 }
-.profile .deliverer-data .form-profile .entity {
+.profile-admin .deliverer-data .form-profile .entity {
   margin-right: 1rem;
   width: 150px;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.profile .deliverer-data .form-profile input {
+.profile-admin .deliverer-data .form-profile input {
   width: 250px;
   line-height: 1.5rem;
   outline: none;
@@ -93,101 +89,244 @@
   text-align: center;
   margin-bottom: 0.5rem;
 }
-.profile .deliverer-data .vehicle {
+.profile-admin .deliverer-data .vehicle {
   width: 100%;
 }
-.profile .deliverer-data .vehicle .title-add {
+.profile-admin .deliverer-data .vehicle .title-add {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin: 2rem 0 1rem 0;
 }
-.profile .deliverer-data .vehicle .title-add .fa-plus {
+.profile-admin .deliverer-data .vehicle .title-add .fa-plus {
   margin-left: 1rem;
   border: 2px black solid;
   padding: 0.1rem;
   background-color: #6d747d;
   color: white;
 }
-.profile .deliverer-data .vehicle .list-vehicle {
+.profile-admin .deliverer-data .vehicle .list-vehicle {
+  width: 100%;
   border: 2px #1f2937 solid;
   border-radius: 1rem;
-  width: 100%;
   padding: 1rem;
 }
-.profile .deliverer-data .vehicle .list-vehicle thead th:nth-child(odd) {
+.profile-admin .deliverer-data .vehicle .list-vehicle thead th:nth-child(odd) {
   background-color: #1f2937;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile .deliverer-data .vehicle .list-vehicle thead th:nth-child(even) {
+.profile-admin .deliverer-data .vehicle .list-vehicle thead th:nth-child(even) {
   background-color: #6d747d;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile .deliverer-data .vehicle .list-vehicle tbody {
+.profile-admin .deliverer-data .vehicle .list-vehicle tbody {
+  width: 100%;
   text-align: center;
 }
-.profile .deliverer-data .vehicle .list-vehicle tbody td:nth-child(odd) {
+.profile-admin .deliverer-data .vehicle .list-vehicle tbody td:nth-child(odd) {
   background-color: #34495e;
   color: white;
   width: 100px;
 }
-.profile .deliverer-data .vehicle .list-vehicle tbody td:nth-child(even) {
+.profile-admin .deliverer-data .vehicle .list-vehicle tbody td:nth-child(even) {
   background-color: #ecf0f1;
   color: white;
   width: 100px;
   color: #1f2937;
 }
-.profile .deliverer-data .way {
+.profile-admin .way {
   width: 100%;
 }
-.profile .deliverer-data .way .title-add {
+.profile-admin .way .title-add {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin: 2rem 0 1rem 0;
 }
-.profile .deliverer-data .way .title-add .fa-plus {
+.profile-admin .way .title-add .fa-plus {
   margin-left: 1rem;
   border: 2px black solid;
   padding: 0.1rem;
   background-color: #6d747d;
   color: white;
 }
-.profile .deliverer-data .way .list-way {
+.profile-admin .way .list-way {
   border: 2px #1f2937 solid;
   border-radius: 1rem;
   width: 100%;
   padding: 1rem;
 }
-.profile .deliverer-data .way .list-way thead th:nth-child(odd) {
+.profile-admin .way .list-way thead th:nth-child(odd) {
   background-color: #1f2937;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile .deliverer-data .way .list-way thead th:nth-child(even) {
+.profile-admin .way .list-way thead th:nth-child(even) {
   background-color: #6d747d;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile .deliverer-data .way .list-way tbody {
+.profile-admin .way .list-way tbody {
   text-align: center;
 }
-.profile .deliverer-data .way .list-way tbody td:nth-child(odd) {
+.profile-admin .way .list-way tbody td:nth-child(odd) {
   background-color: #34495e;
   color: white;
   width: 100px;
 }
-.profile .deliverer-data .way .list-way tbody td:nth-child(even) {
+.profile-admin .way .list-way tbody td:nth-child(even) {
   background-color: #ecf0f1;
   color: white;
   width: 100px;
   color: #1f2937;
+}
+@media screen and (max-width: 768px) {
+  .profile-admin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .profile-admin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-admin .personal-data .btn-password-profile {
+    border: none;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .profile-admin {
+    max-width: 2048px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-admin .personal-data .btn-password-profile {
+    border: none;
+  }
+}
+
+.profile-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-user h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.profile-user .avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-user .avatar .avatar-profile {
+  width: 150px;
+  margin: 2rem;
+}
+.profile-user .personal-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.profile-user .personal-data .form-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile-user .personal-data .form-profile .entity {
+  margin-right: 1rem;
+  width: 150px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.profile-user .personal-data .form-profile input {
+  width: 250px;
+  line-height: 1.5rem;
+  outline: none;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.profile-user .personal-data .form-profile .avatar-upload {
+  border: none;
+  border-radius: 0;
+}
+.profile-user .personal-data .form-profile .phone-input {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  width: 250px;
+}
+.profile-user .personal-data .btn-password-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1f2937;
+}
+.profile-user .deliverer-data {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .profile-user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .profile-user {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 800px;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-user .personal-data .btn-password-profile {
+    border: none;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .profile-user {
+    max-width: 2048px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 800px;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-user .personal-data .btn-password-profile {
+    border: none;
+  }
 }/*# sourceMappingURL=Profile.css.map */

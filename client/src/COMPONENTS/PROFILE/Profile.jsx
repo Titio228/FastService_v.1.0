@@ -9,7 +9,7 @@ export default function Profile() {
   const [phoneValue, setPhoneValue] = useState("");
   console.log(phoneValue);
   return (
-    <div className="profile">
+    <div className="profile-admin">
       <div className="avatar">
         <img src={Avatar} alt="avatar" className="avatar-profile" />
       </div>
@@ -19,19 +19,19 @@ export default function Profile() {
           <label htmlFor="name" className="entity">
             Nom
           </label>
-          <input type="text" />
+          <input type="text" className="input-profile" />
           <label htmlFor="surname" className="entity">
             Prénom
           </label>
-          <input type="text" />
+          <input type="text" className="input-profile" />
           <label htmlFor="dateOfBirth" className="entity">
             Date de naissance
           </label>
-          <input type="date" />
+          <input type="date" className="input-profile" />
           <label htmlFor="email" className="entity">
             Email
           </label>
-          <input type="email" />
+          <input type="email" className="input-profile" />
           <label htmlFor="phone" className="entity">
             Téléphone
           </label>
@@ -40,28 +40,36 @@ export default function Profile() {
             defaultCountry="BE"
             value={phoneValue}
             onChange={setPhoneValue}
-            className="phone-input"
+            className="input-profile"
           />
           <label htmlFor="street" className="entity">
             Rue
           </label>
-          <input type="text" />
+          <input type="text" className="input-profile" />
           <label htmlFor="number" className="entity">
             N°
           </label>
-          <input type="number" className="number" />
+          <input type="number" className="input-profile" />
           <label htmlFor="postalCode" className="entity">
             Code postal
           </label>
-          <input type="number" />
+          <input type="number" className="input-profile" />
           <label htmlFor="locality" className="entity">
             Localité
           </label>
-          <input type="text" />
+          <input type="text" className="input-profile" />
           <label htmlFor="country" className="entity">
             Pays
           </label>
-          <input type="text" />
+          <input type="text" className="input-profile" />
+          <label htmlFor="avatar" className="entity">
+            Votre avatar
+          </label>
+          <input
+            type="file"
+            accept="image/png, image/jpeg"
+            className="avatar-upload"
+          />
         </form>
         <div className="btn-password-profile">
           <BUTTON
@@ -102,6 +110,30 @@ export default function Profile() {
               <th>Plaque</th>
               <th>Capacité</th>
             </thead>
+            <tbody>
+              <td>Mercedes</td>
+              <td>Vito</td>
+              <td>1-GHG-257</td>
+              <td>420L</td>
+            </tbody>
+            <tbody>
+              <td>Peaugeot</td>
+              <td>306</td>
+              <td>1-GHG-258</td>
+              <td>140L</td>
+            </tbody>
+            <tbody>
+              <td>Citroën</td>
+              <td>DS4</td>
+              <td>1-GHG-259</td>
+              <td>45L</td>
+            </tbody>
+            <tbody>
+              <td>Citorën</td>
+              <td>Jumper</td>
+              <td>1-GHG-256</td>
+              <td>650L</td>
+            </tbody>
             <tbody>
               <td>Mercedes</td>
               <td>Vito</td>
