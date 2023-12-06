@@ -3,6 +3,8 @@
 @import "../../assets/STYLE/_vues.scss";
 
 .profile-admin {
+  width: $width;
+
   h1 {
     margin-bottom: 2rem;
     text-align: center;
@@ -124,43 +126,65 @@
         }
       }
 
-      .list-vehicle {
-        width: $width;
+      .tbl-container {
+        max-width: $width;
+        max-height: fit-content;
         border: 2px $bck-color-header-footer solid;
         border-radius: 1rem;
         padding: 1rem;
 
-        thead {
-          th:nth-child(odd) {
-            background-color: $bck-color-header-footer;
-            color: white;
-            font-size: 1.2rem;
-            width: 100px;
-          }
+        .tbl-fixed {
+          overflow-y: scroll;
+          height: fit-content;
+          max-height: 200px;
 
-          th:nth-child(even) {
-            background-color: $bck-color-secondary;
-            color: white;
-            font-size: 1.2rem;
-            width: 100px;
-          }
-        }
+          .list-vehicle {
+            width: $width;
 
-        tbody {
-          width: $width;
-          text-align: center;
+            thead {
+              tr {
+                th {
+                  position: sticky;
+                  top: 0;
+                }
 
-          td:nth-child(odd) {
-            background-color: #34495e;
-            color: white;
-            width: 100px;
-          }
+                th:nth-child(odd) {
+                  background-color: $bck-color-header-footer;
+                  color: white;
+                  font-size: 1.2rem;
+                  width: 100px;
+                }
 
-          td:nth-child(even) {
-            background-color: #ecf0f1;
-            color: white;
-            width: 100px;
-            color: $bck-color-header-footer;
+                th:nth-child(even) {
+                  background-color: $bck-color-secondary;
+                  color: white;
+                  font-size: 1.2rem;
+                  width: 100px;
+                }
+              }
+            }
+
+            tbody {
+              width: $width;
+              text-align: center;
+
+              tr {
+                width: $width;
+
+                td:nth-child(odd) {
+                  background-color: #34495e;
+                  color: white;
+                  width: 100px;
+                }
+
+                td:nth-child(even) {
+                  background-color: #ecf0f1;
+                  color: white;
+                  width: 100px;
+                  color: $bck-color-header-footer;
+                }
+              }
+            }
           }
         }
       }
@@ -186,41 +210,62 @@
       }
     }
 
-    .list-way {
+    .tbl-container {
+      max-width: $width;
+      max-height: fit-content;
       border: 2px $bck-color-header-footer solid;
       border-radius: 1rem;
-      width: $width;
       padding: 1rem;
 
-      thead {
-        th:nth-child(odd) {
-          background-color: $bck-color-header-footer;
-          color: white;
-          font-size: 1.2rem;
-          width: 100px;
-        }
+      .tbl-fixed {
+        overflow-y: scroll;
+        height: fit-content;
+        max-height: 200px;
 
-        th:nth-child(even) {
-          background-color: $bck-color-secondary;
-          color: white;
-          font-size: 1.2rem;
-          width: 100px;
-        }
-      }
+        .list-way {
+          border-radius: 1rem;
+          width: $width;
+          padding: 1rem;
 
-      tbody {
-        text-align: center;
-        td:nth-child(odd) {
-          background-color: #34495e;
-          color: white;
-          width: 100px;
-        }
+          thead {
+            tr {
+              position: sticky;
+              top: 0;
 
-        td:nth-child(even) {
-          background-color: #ecf0f1;
-          color: white;
-          width: 100px;
-          color: $bck-color-header-footer;
+              th:nth-child(odd) {
+                background-color: $bck-color-header-footer;
+                color: white;
+                font-size: 1.2rem;
+                width: 100px;
+              }
+
+              th:nth-child(even) {
+                background-color: $bck-color-secondary;
+                color: white;
+                font-size: 1.2rem;
+                width: 100px;
+              }
+            }
+          }
+
+          tbody {
+            text-align: center;
+
+            tr {
+              td:nth-child(odd) {
+                background-color: #34495e;
+                color: white;
+                width: 100px;
+              }
+
+              td:nth-child(even) {
+                background-color: #ecf0f1;
+                color: white;
+                width: 100px;
+                color: $bck-color-header-footer;
+              }
+            }
+          }
         }
       }
     }

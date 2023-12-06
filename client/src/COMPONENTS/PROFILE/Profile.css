@@ -1,5 +1,6 @@
 .profile-admin {
   width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,34 +107,52 @@
   background-color: #6d747d;
   color: white;
 }
-.profile-admin .deliverer-data .vehicle .list-vehicle {
-  width: 100%;
+.profile-admin .deliverer-data .vehicle .tbl-container {
+  max-width: 100%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   border: 2px #1f2937 solid;
   border-radius: 1rem;
   padding: 1rem;
 }
-.profile-admin .deliverer-data .vehicle .list-vehicle thead th:nth-child(odd) {
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed {
+  overflow-y: scroll;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 200px;
+}
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle {
+  width: 100%;
+}
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle thead tr th {
+  position: sticky;
+  top: 0;
+}
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle thead tr th:nth-child(odd) {
   background-color: #1f2937;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile-admin .deliverer-data .vehicle .list-vehicle thead th:nth-child(even) {
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle thead tr th:nth-child(even) {
   background-color: #6d747d;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile-admin .deliverer-data .vehicle .list-vehicle tbody {
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle tbody {
   width: 100%;
   text-align: center;
 }
-.profile-admin .deliverer-data .vehicle .list-vehicle tbody td:nth-child(odd) {
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle tbody tr {
+  width: 100%;
+}
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle tbody tr td:nth-child(odd) {
   background-color: #34495e;
   color: white;
   width: 100px;
 }
-.profile-admin .deliverer-data .vehicle .list-vehicle tbody td:nth-child(even) {
+.profile-admin .deliverer-data .vehicle .tbl-container .tbl-fixed .list-vehicle tbody tr td:nth-child(even) {
   background-color: #ecf0f1;
   color: white;
   width: 100px;
@@ -156,33 +175,50 @@
   background-color: #6d747d;
   color: white;
 }
-.profile-admin .way .list-way {
+.profile-admin .way .tbl-container {
+  max-width: 100%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   border: 2px #1f2937 solid;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.profile-admin .way .tbl-container .tbl-fixed {
+  overflow-y: scroll;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 200px;
+}
+.profile-admin .way .tbl-container .tbl-fixed .list-way {
   border-radius: 1rem;
   width: 100%;
   padding: 1rem;
 }
-.profile-admin .way .list-way thead th:nth-child(odd) {
+.profile-admin .way .tbl-container .tbl-fixed .list-way thead tr {
+  position: sticky;
+  top: 0;
+}
+.profile-admin .way .tbl-container .tbl-fixed .list-way thead tr th:nth-child(odd) {
   background-color: #1f2937;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile-admin .way .list-way thead th:nth-child(even) {
+.profile-admin .way .tbl-container .tbl-fixed .list-way thead tr th:nth-child(even) {
   background-color: #6d747d;
   color: white;
   font-size: 1.2rem;
   width: 100px;
 }
-.profile-admin .way .list-way tbody {
+.profile-admin .way .tbl-container .tbl-fixed .list-way tbody {
   text-align: center;
 }
-.profile-admin .way .list-way tbody td:nth-child(odd) {
+.profile-admin .way .tbl-container .tbl-fixed .list-way tbody tr td:nth-child(odd) {
   background-color: #34495e;
   color: white;
   width: 100px;
 }
-.profile-admin .way .list-way tbody td:nth-child(even) {
+.profile-admin .way .tbl-container .tbl-fixed .list-way tbody tr td:nth-child(even) {
   background-color: #ecf0f1;
   color: white;
   width: 100px;

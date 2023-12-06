@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Button from "../BUTTON/Button";
 import BoxImgHome from "../../assets/IMG/Box-home-img2.png";
+import Caroussel from "../CAROUSSEL/Caroussel";
 
 export default function Home() {
   return (
@@ -91,11 +92,7 @@ export default function Home() {
       </div>
       <div className="bottom-home">
         <i class="fa-solid fa-quote-right"></i>
-        <p className="para-perso">
-          Chaque mois, j'économise entre 150 et 200€ minimum sur mes frais de
-          déplacements, en livrant des colis. C'est tout benef pour moi : àa
-          paye mon carburant et l'usure de ma voiture.
-        </p>
+        <Caroussel />
       </div>
     </div>
   );
