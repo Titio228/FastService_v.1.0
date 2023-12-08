@@ -38,9 +38,19 @@
   border-radius: 1rem;
 }
 
+.white {
+  width: $width;
+  background-color: white;
+  color: red;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
 .blue:hover,
 .red:hover,
-.cyan:hover {
+.cyan:hover,
+.white:hover {
   background-color: orange;
 }
 
@@ -55,6 +65,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .container-btn-lg {

@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import "./Caroussel.css";
-import TEST from "../../assets/IMG/avatar.png";
 
 export default function Caroussel() {
-  const [stars, setStars] = useState([]);
-
   const dataComment = [
     {
       id: 1,

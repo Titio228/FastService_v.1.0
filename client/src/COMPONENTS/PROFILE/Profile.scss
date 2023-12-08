@@ -309,6 +309,7 @@
     }
   }
 }
+
 .profile-user {
   h1 {
     margin-bottom: 2rem;
@@ -355,12 +356,10 @@
         margin-bottom: 0.5rem;
       }
 
-      input {
+      .input-profile {
         width: 250px;
         line-height: 1.5rem;
         outline: none;
-        // border: 2px $bck-color-header-footer solid;
-        // border-radius: 1rem;
         text-align: center;
         margin-bottom: 0.5rem;
       }
@@ -368,12 +367,6 @@
       .avatar-upload {
         border: none;
         border-radius: 0;
-      }
-      .phone-input {
-        width: $width;
-        display: flex;
-        justify-content: flex-start;
-        width: 250px;
       }
     }
 

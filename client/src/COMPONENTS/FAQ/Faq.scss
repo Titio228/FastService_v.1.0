@@ -1,0 +1,247 @@
+@import "../../assets/STYLE/_fonts.scss";
+@import "../../assets/STYLE/_variables.scss";
+@import "../../assets/STYLE/_vues.scss";
+
+.h2-faq {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+details {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: black;
+  }
+}
+
+.btn-faq {
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style-type: "\1F44D";
+}
+
+.faq {
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .top-faq {
+    width: $width;
+    background: url("../../assets/IMG/main-dans-la-main-faq.jpg") center
+      center/cover;
+
+    .title-faq {
+      color: white;
+      font-size: 2.5rem;
+      padding: 2rem;
+    }
+
+    .titleh3-faq {
+      color: white;
+      padding: 0 2rem 2rem 2rem;
+    }
+
+    .btn-faq-top {
+      width: $width;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+    }
+  }
+
+  .section1-faq {
+    margin: 2rem;
+
+    .line {
+      height: 5px;
+      background-color: cyan;
+      width: 40%;
+      margin: -0.5rem auto 2rem;
+    }
+
+    details[open] {
+      color: cyan;
+    }
+  }
+
+  .section2-faq {
+    margin: 2rem;
+
+    .line {
+      height: 5px;
+      background-color: red;
+      width: 40%;
+      margin: -0.5rem auto 2rem;
+    }
+
+    details[open] {
+      color: red;
+    }
+
+    .btn-send-package-faq {
+      width: $width;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .section3-faq {
+    margin: 2rem;
+
+    .line {
+      height: 5px;
+      background-color: blue;
+      width: 40%;
+      margin: -0.5rem auto 2rem;
+    }
+
+    details[open] {
+      color: blue;
+    }
+
+    .btn-send-package-faq {
+      width: $width;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .section4-faq {
+    text-align: center;
+    border: 8px double $bck-color-header-footer;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    h3,
+    p {
+      margin-bottom: 1rem;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      line-height: 1.5rem;
+      width: $width;
+      text-align: center;
+      outline: none;
+      border: 1px solid $bck-color-primary;
+    }
+
+    textarea {
+      text-align: start;
+      padding: 1rem;
+      resize: none;
+    }
+
+    .total-character {
+      width: $width;
+      text-align: end;
+    }
+  }
+
+  @include xs {
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include lg {
+    .top-faq {
+      .btn-faq-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    .section1-faq,
+    .section2-faq {
+      .line {
+        width: 20%;
+      }
+
+      .details-box {
+        width: $width;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .section4-faq {
+      width: 30%;
+    }
+  }
+
+  @include xxl {
+    max-width: 2048px;
+    margin: auto;
+
+    .top-faq {
+      .btn-faq-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    .section1-faq,
+    .section2-faq {
+      .line {
+        width: 20%;
+      }
+
+      .details-box {
+        width: $width;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .section4-faq {
+      width: 30%;
+    }
+  }
+}

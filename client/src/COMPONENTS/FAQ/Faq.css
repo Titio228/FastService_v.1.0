@@ -1,1 +1,209 @@
-/*# sourceMappingURL=Faq.css.map */
+@charset "UTF-8";
+.h2-faq {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+details {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+details summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+details p {
+  color: black;
+}
+
+.btn-faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style-type: "👍";
+}
+
+.faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq .top-faq {
+  width: 100%;
+  background: url("../../assets/IMG/main-dans-la-main-faq.jpg") center center/cover;
+}
+.faq .top-faq .title-faq {
+  color: white;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+.faq .top-faq .titleh3-faq {
+  color: white;
+  padding: 0 2rem 2rem 2rem;
+}
+.faq .top-faq .btn-faq-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.faq .section1-faq {
+  margin: 2rem;
+}
+.faq .section1-faq .line {
+  height: 5px;
+  background-color: cyan;
+  width: 40%;
+  margin: -0.5rem auto 2rem;
+}
+.faq .section1-faq details[open] {
+  color: cyan;
+}
+.faq .section2-faq {
+  margin: 2rem;
+}
+.faq .section2-faq .line {
+  height: 5px;
+  background-color: red;
+  width: 40%;
+  margin: -0.5rem auto 2rem;
+}
+.faq .section2-faq details[open] {
+  color: red;
+}
+.faq .section2-faq .btn-send-package-faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq .section3-faq {
+  margin: 2rem;
+}
+.faq .section3-faq .line {
+  height: 5px;
+  background-color: blue;
+  width: 40%;
+  margin: -0.5rem auto 2rem;
+}
+.faq .section3-faq details[open] {
+  color: blue;
+}
+.faq .section3-faq .btn-send-package-faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq .section4-faq {
+  text-align: center;
+  border: 8px double #1f2937;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.faq .section4-faq h3,
+.faq .section4-faq p {
+  margin-bottom: 1rem;
+}
+.faq .section4-faq input,
+.faq .section4-faq textarea {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  border: 1px solid #e5e7eb;
+}
+.faq .section4-faq textarea {
+  text-align: start;
+  padding: 1rem;
+  resize: none;
+}
+.faq .section4-faq .total-character {
+  width: 100%;
+  text-align: end;
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2048px) {
+  .faq .top-faq .btn-faq-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+  }
+  .faq .section1-faq .line,
+  .faq .section2-faq .line {
+    width: 20%;
+  }
+  .faq .section1-faq .details-box,
+  .faq .section2-faq .details-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .faq .section4-faq {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 2048px) and (max-width: 5000px) {
+  .faq {
+    max-width: 2048px;
+    margin: auto;
+  }
+  .faq .top-faq .btn-faq-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+  }
+  .faq .section1-faq .line,
+  .faq .section2-faq .line {
+    width: 20%;
+  }
+  .faq .section1-faq .details-box,
+  .faq .section2-faq .details-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  .faq .section4-faq {
+    width: 30%;
+  }
+}/*# sourceMappingURL=Faq.css.map */
