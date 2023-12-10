@@ -1,0 +1,19 @@
+@import "../../assets/STYLE/_fonts.scss";
+@import "../../assets/STYLE/_variables.scss";
+@import "../../assets/STYLE/_vues.scss";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: $width;
+
+  .token {
+    width: 10%;
+    width: 400px;
+    word-wrap: break-word;
+    padding: 1rem;
+  }
+}

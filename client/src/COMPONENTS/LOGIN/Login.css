@@ -1,1 +1,14 @@
-/*# sourceMappingURL=Login.css.map */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.login .token {
+  width: 10%;
+  width: 400px;
+  word-wrap: break-word;
+  padding: 1rem;
+}/*# sourceMappingURL=Login.css.map */
